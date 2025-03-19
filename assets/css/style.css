@@ -711,14 +711,35 @@ a{
 }
 
 
-@keyframes slide {
+.logos-wrapper {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    width: 100%;
+  }
+  
+  .logos-slide {
+    display: flex;
+    width: max-content;
+    animation: slide 60s linear infinite;
+
+  }
+  
+  .logos-slide img {
+    height: 50px; /* Ajusta el tamaño según lo necesites */
+    margin: 0 15px; /* Espaciado entre imágenes */
+  }
+  
+  /* Animación de desplazamiento infinito */
+  @keyframes slide {
     from {
-      transform: translateX(100%);
+      transform: translateX(0);
     }
     to {
-      transform: translateX(-100%);
+      transform: translateX(-50%);
     }
-}
+  }
+  
 /* fin index */
 
 
@@ -1005,7 +1026,22 @@ canvas {
     min-width: 276px;
     min-height: 166px;
     margin-bottom: 15px;
+
+    h5{
+        color: #173090;
+    }
+  
+    p{
+        color: #FE6484;
+
+    }
+    p:hover{
+        color:#ca0813;
+    }
 }
+
+
+
 
 @media (max-width: 768px) {
     .logo-social-container {
@@ -1034,4 +1070,5 @@ canvas {
         max-width: 80%;
       }
 }
+
 
