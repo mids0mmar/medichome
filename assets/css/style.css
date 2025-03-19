@@ -173,6 +173,13 @@ a.logo{
     font-weight:500;
 }
 
+.iconoshov{
+    color: #2324ED;
+}
+.iconoshov:hover{
+    border-bottom: 2px solid #2324ED;
+}
+
 /* fin global */
 
 /* index carrusel portada */
@@ -215,6 +222,7 @@ a.logo{
 @media (max-width: 768px) {
     #carouselExampleFade {
         max-height: 210px;
+        margin-top: 163px;
     }
 }
 
@@ -257,13 +265,54 @@ a.logo{
 /* index seccion2 portada */
 
 .secciondos-portada{
-    margin-top: 100px;
+    margin-top: 50px;
 }
-
+@media (max-width: 768px) {
+    
+    .secciondos-portada{
+        margin-top: 40px;
+    }
+}
+@media (max-width: 767.98px) {
+    /* Ajustar el ancho del SVG (col-md-1) y el texto (col-md-5) */
+    .secciondos-portada .col-md-1 {
+      flex: 0 0 20%; /* El SVG ocupa el 20% */
+      max-width: 20%;
+    }
+  
+    .secciondos-portada .col-md-5 {
+      flex: 0 0 80%; /* El texto ocupa el 80% */
+      max-width: 80%;
+    }
+  
+    /* Ocultar la segunda imagen */
+    .secciondos-portada .img2-seccion-uno {
+      display: none;
+    }
+  
+    /* Asegurarse de que la primera imagen se muestre correctamente */
+    .secciondos-portada .img-seccion-uno {
+      display: block;
+      width: 100%; 
+      padding: 20px;
+    }
+  }
 /* fin de seccion2 portada */
 
 /* index seccion3 servicios */
+@media (max-width: 768px) {
+    .seccion-servicios {
+        margin-top: 0px !important;
+        
+    }
 
+}
+@media (max-width: 768px) {
+    .border-servicios1 {
+        max-height: 120px;
+    }
+
+}
 
 .border-servicios{
     border: 1px solid #EFF3F7;
@@ -381,6 +430,34 @@ a{
     border-radius: 5px;
 
 }
+
+/* @media (max-width: 768px) {
+    .btn1{
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-bottom: 7px;
+    }
+    
+
+} */
+@media (max-width: 767.98px) {
+    .contenedor .row {
+      display: flex; /* Activa flexbox */
+      justify-content: center; /* Centra los botones horizontalmente */
+      align-items: center; /* Centra los botones verticalmente */
+      flex-wrap: nowrap; /* Evita que los botones se envuelvan a la siguiente línea */
+    }
+  
+    .contenedor .btn1 {
+      flex: 0 0 30%; /* Los botones no crecen ni se encogen */
+      width: auto; /* Ancho automático */
+      margin: 0 5px; /* Espacio entre los botones */
+    }
+  
+    .contenedor .col-md-5 {
+      display: none; /* Oculta las columnas vacías en pantallas pequeñas */
+    }
+  }
 #prevBtn:hover{
     box-shadow: inset 0 0 0 2px #2324ED;
 
@@ -422,7 +499,11 @@ a{
 	margin-top: 147px;
 	border-top: 2px solid #244de5;
 	background-color: #fff;
- 
+}
+@media (max-width: 768px) {
+    .footer-main {
+        margin-top: 60px;
+    }
 }
 .footer-main .widget {
 	padding-right: 60px;
@@ -712,6 +793,22 @@ a{
     padding: 31px 20px 30px 20px;
     border-radius: 10px;
 }
+@media (max-width: 768px) {
+    .div4-nosotros1{
+        padding: 10px;
+    }
+ 
+        .seccionnosotros2 .col-md-1 {
+          flex: 0 0 10%;
+          max-width: 10%;
+        }
+      
+        .seccionnosotros2 .col-md-5 {
+          flex: 0 0 90%;
+          max-width: 90%;
+        }
+}
+
 .parentnosotros1 {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -807,6 +904,18 @@ a{
         }
         
 
+        @media (max-width: 768px) {
+         
+                .creemos .coluno {
+                  flex: 0 0 20%;
+                  max-width: 20%;
+                }
+              
+                .creemos .coldos {
+                  flex: 0 0 80%;
+                  max-width: 80%;
+                }
+        }
 /* slider 2 */
 .my-slider2.tns-item{
     color: black;
@@ -890,3 +999,39 @@ canvas {
     height: auto;
     
 }
+.modelos {
+    border: 1px solid blue;
+    padding: 10px;
+    min-width: 276px;
+    min-height: 166px;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+    .logo-social-container {
+        display: flex;
+        justify-content: center !important;
+        align-items: center;
+        width: 100%;
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: center !important;
+        align-items: center;
+    }
+    .logo-footer{
+        padding-left: 50px;
+    }
+    
+    .uno {
+        flex: 0 0 20%; /* El SVG ocupa el 20% */
+        max-width: 20%;
+      }
+    
+      .dos {
+        flex: 0 0 80%; /* El texto ocupa el 80% */
+        max-width: 80%;
+      }
+}
+

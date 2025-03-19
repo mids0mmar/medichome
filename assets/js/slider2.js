@@ -1,7 +1,7 @@
 // 
 var slider2 = tns({
     container: '.my-slider2',
-    items: 1,
+    items: 2,
     loop: false,
     swipeAngle: false,
     controls: true,
@@ -13,7 +13,7 @@ var slider2 = tns({
       640: {
         edgePadding: 20,
         gutter: 20,
-        items: 2
+        items: 1
       },
       700: {
         gutter: 30

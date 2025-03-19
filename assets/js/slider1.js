@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
         640: {
           edgePadding: 20,
           gutter: 20,
-          items: 2
+          items: 1,
         },
         700: {
           gutter: 30
