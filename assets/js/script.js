@@ -101,4 +101,18 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+document.addEventListener("DOMContentLoaded", function() {
+    const copiarBtn = document.getElementById("copiarBtn");
+    const popover = new bootstrap.Popover(copiarBtn, { trigger: "focus" });
 
+    copiarBtn.addEventListener("click", function() {
+        // Número a copiar
+        const numero = "+56229382182";
+
+        // Copiar al portapapeles
+        navigator.clipboard.writeText(numero).then(() => {
+            copiarBtn.focus(); // Activa el popover
+            setTimeout(() => copiarBtn.blur(), 2000); // Oculta el popover después de 2 segundos
+        });
+    });
+});
