@@ -409,7 +409,7 @@ a{
     padding-right: 120px;
 }
 
-/* @media (max-width: 768px) {
+@media (max-width: 768px) {
 
     .filaservicios {
         padding-left: 15px !important; 
@@ -419,8 +419,8 @@ a{
    .border-servicios, .border-servicios1{
     width: 100%;
    }
-}
-@media (max-width: 768px) {
+} 
+/* @media (max-width: 768px) {
 
     .filaservicios2{
         padding-left: 15px;
@@ -436,40 +436,39 @@ a{
       max-width: 48%;
     }
      
-} */
+}  */
+
 /* Ajuste para pantallas menores a 768px */
 @media (max-width: 1200px) {  
-    .filaservicios2, .filaservicios {
+    .filaservicios2 {
         display: flex;  
         flex-wrap: wrap;  
-        justify-content: center; /* Centra los elementos si hay espacio extra */
+        justify-content: center; 
         padding: 0 !important;  
     }
 
-    .filaservicios2 .col-md-3, .filaservicios .col-md-3 {  
+    .filaservicios2 .col-md-3 {  
         flex: 0 0 25%; 
         max-width: 25%;  
     }  
 
-    .filaservicios2 img, .filaservicios img {  
-        width: 90%; /* Ajusta proporcionalmente sin cambiar la estructura */  
+    .filaservicios2 img{  
+        width: 90%; 
         height: auto;  
         display: block;  
         margin: 0 auto;  
     }  
 }
 
-/* 🔒 Mantiene 4 imágenes por fila incluso en tablets */
 @media (max-width: 768px) {  
-    .filaservicios2 .col-md-3, .filaservicios .col-md-3 {  
+    .filaservicios2 .col-md-3{  
         flex: 0 0 25%; 
         max-width: 25%;  
     }  
 }
 
-/* 📱 SOLO en móviles (≤576px), cambia a 2 imágenes por fila */
 @media (max-width: 576px) {  
-    .filaservicios2 .col-md-3, .filaservicios .col-md-3 {  
+    .filaservicios2 .col-md-3 {  
         flex: 0 0 50%; 
         max-width: 50%;  
     }  
