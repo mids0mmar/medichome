@@ -180,6 +180,10 @@ a.logo{
     border-bottom: 2px solid #2324ED;
 }
 
+a.botiquin:hover{
+    text-decoration: underline;
+}
+
 /* fin global */
 
 /* index carrusel portada */
@@ -1181,6 +1185,10 @@ canvas {
     min-height: 70px;
 }
 .bordee{
-    border-bottom: 1px solid #2324ED;
+    border-bottom: 1px solid #D8DFF3;
 }
-
+.offcanvas-header{
+    background-color: #2324ED;
+    color: white;
+    font-weight: 500;
+}
